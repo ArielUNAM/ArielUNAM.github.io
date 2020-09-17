@@ -32,10 +32,12 @@ $("#foo").submit(function(event){
     // Callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
         // Log a message to the console
-        console.log("Hooray, it worked!");
-        console.log(response);
-        console.log(textStatus);
-        console.log(jqXHR);
+        console.log("Tranquilo, ya fue enviado!");
+        //console.log(response);
+        //console.log(textStatus);
+        //console.log(jqXHR);
+        //alert('Thank you for contacting us.');
+        //return true;
     });
 
     // Callback handler that will be called on failure
