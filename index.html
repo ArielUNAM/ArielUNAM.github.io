@@ -627,14 +627,13 @@
                     </div>
                     <div>
                       <!--form action="forms/contact.php" method="post" role="form" class="php-email-form"-->
-                      <iframe id=hidden_iframe name=hidden_iframe onload='submitted&&(window.location="https://arielunam.github.io/#contact")' style=display:none></iframe>
-                      <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScNfG46KWO-1GsUI-tYx2NqN7Giy0Ypt6HvvkssZWjjOoVP2Q/viewform?usp=sf_link"method=post onsubmit="submitted=!0" target=hidden_iframe>
-                       <!--target="hidden_iframe" onsubmit="submitted=true;"-->
+                      <!--iframe id=hidden_iframe name=hidden_iframe onload='submitted&&(window.location="https://arielunam.github.io/#contact")' style=display:none></iframe-->
+                      <!--form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScNfG46KWO-1GsUI-tYx2NqN7Giy0Ypt6HvvkssZWjjOoVP2Q/viewform?embedded=true" method="post" target="hidden_iframe" onsubmit="submitted=true;"-->
+                        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScNfG46KWO-1GsUI-tYx2NqN7Giy0Ypt6HvvkssZWjjOoVP2Q/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                        
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <!--input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" /-->
-                              <!--https://docs.google.com/forms/d/e/1FAIpQLScNfG46KWO-1GsUI-tYx2NqN7Giy0Ypt6HvvkssZWjjOoVP2Q/viewform?usp=pp_url&entry.1469152997=Ariel&entry.1270160583=arielcg@nube.unadmexico.mx&entry.602000059=Prueba&entry.2130725704=Hola,+esto+es+una+prueba-->
                               <input type="text" name="entry.1469152997" class="form-control" id="entry.1469152997" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                               <div class="validate"></div>
                             </div>
@@ -666,19 +665,19 @@
                             <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
                           </div-->
                           <div class="col-md-12 text-center">
-                          <button type="submit" class="button button-a button-big button-rouded">Enviar mensaje.</button>
+                          <button type="submit" class="button button-a button-big button-rouded">Enviar mensaje</button>
                           </div>
                         </div>
                       </form>
-                      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#contact';}"></iframe>
                       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                      <!--script type="text/javascript">var submitted=false;</script>
+                      <script type="text/javascript">var submitted=false;</script>
                       <script type="text/javascript">
                       $('#gform').on('submit', function(e) {
                         $('#gform *').fadeOut(2000);
                         $('#gform').prepend('Your submission has been processed...');
                         });
-                      </script-->
+                      </script>
                     </div>
                   </div>
                   <div class="col-md-6">
