@@ -627,7 +627,9 @@
                     </div>
                     <div>
                       <!--form action="forms/contact.php" method="post" role="form" class="php-email-form"-->
-                      <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScNfG46KWO-1GsUI-tYx2NqN7Giy0Ypt6HvvkssZWjjOoVP2Q/viewform?usp=sf_link" target="hidden_iframe" onsubmit="submitted=true;">
+                      <iframe id=hidden_iframe name=hidden_iframe onload='submitted&&(window.location="https://arielunam.github.io/#contact")' style=display:none></iframe>
+                      <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScNfG46KWO-1GsUI-tYx2NqN7Giy0Ypt6HvvkssZWjjOoVP2Q/viewform?usp=sf_link"method=post onsubmit="submitted=!0" target=hidden_iframe>
+                       <!--target="hidden_iframe" onsubmit="submitted=true;"-->
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -670,13 +672,13 @@
                       </form>
                       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                      <script type="text/javascript">var submitted=false;</script>
+                      <!--script type="text/javascript">var submitted=false;</script>
                       <script type="text/javascript">
                       $('#gform').on('submit', function(e) {
                         $('#gform *').fadeOut(2000);
                         $('#gform').prepend('Your submission has been processed...');
                         });
-                      </script>
+                      </script-->
                     </div>
                   </div>
                   <div class="col-md-6">
